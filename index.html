@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siquijor Info</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1rem;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar Style */
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f4f4f9 !important;
+        }
+        /* Hero Section Style */
+        .hero-section {
+            background-image: 
+            linear-gradient(
+             rgba(0,0,0,0.4), rgba(0,0,0,0.4)
+            ),
+            url('1000_F_277165072_DFRf9ESOq8tCJfzQha7T90i8OVNBo0Dr.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+        /* Intro Section */
+        .intro-section {
+            background-color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .intro-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .intro-section p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .section-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Accordion Section */
+        .accordion-button {
+            font-weight: 500;
+        }
+        .section-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+        }
+        .accordion-item {
+            margin-bottom: 1rem;
+        }
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        /* icons */
+        i{
+          margin-right: 0.5rem;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Siquijor Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#topics" class="nav-link">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1>Welcome to the Island of Siquijor</h1>
+            <p>Explore the history, culture, and more about Siquijor</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <h2>Discover Siquijor</h2>
+            <p>The island of Siquijor is known for its mystical history, beautiful landscapes, and vibrant culture. Learn more about its people, history, and attractions below.</p>
+        </div>
+    </section>
+
+    <!-- Accordion Sections -->
+    <section id="topics" class="container mt-5">
+        <div class="accordion" id="siquijorAccordion">
+            <!-- History Section -->
+            <div class="accordion-item" id="history">
+                <h2 class="accordion-header" id="headingHistory">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHistory" aria-expanded="true" aria-controls="collapseHistory">
+                        <i class="fas fa-history"></i> History of Siquijor
+                    </button>
+                </h2>
+                <div id="collapseHistory" class="accordion-collapse collapse show" aria-labelledby="headingHistory" data-bs-parent="#siquijorAccordion">
+                    <div class="accordion-body">
+                        <img src="bg-history.jpeg" alt="bg-history.jpeg" class="section-image mb-3">
+                        <p>Siquijor is known for its rich history, including its mysterious folklore. It was once part of the Spanish colonial administration...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Population Section -->
+            <div class="accordion-item" id="population">
+                <h2 class="accordion-header" id="headingPopulation">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePopulation" aria-expanded="true" aria-controls="collapsePopulation">
+                        <i class="fas fa-users"></i> Population
+                    </button>
+                </h2>
+                <div id="collapsePopulation" class="accordion-collapse collapse" aria-labelledby="headingPopulation" data-bs-parent="#siquijorAccordion">
+                    <div class="accordion-body">
+                        <img src="path_to_population_image.jpg" alt="Siquijor Population" class="section-image mb-3">
+                        <p>The current population of Siquijor is approximately 100,000 people. The island is known for its peaceful rural lifestyle...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Municipality Section -->
+            <div class="accordion-item" id="municipalities">
+                <h2 class="accordion-header" id="headingMunicipality">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMunicipality" aria-expanded="true" aria-controls="collapseMunicipality">
+                        <i class="fas fa-building"></i> Municipalities
+                    </button>
+                </h2>
+                <div id="collapseMunicipality" class="accordion-collapse collapse" aria-labelledby="headingMunicipality" data-bs-parent="#siquijorAccordion">
+                    <div class="accordion-body">
+                        <img src="path_to_municipality_image.jpg" alt="Siquijor Municipality" class="section-image mb-3">
+                        <p>Siquijor is divided into six municipalities: Siquijor, Larena, Enrique Villanueva, San Juan, Lazi, and Maria...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attractions Section -->
+            <div class="accordion-item" id="attractions">
+                <h2 class="accordion-header" id="headingAttractions">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAttractions" aria-expanded="true" aria-controls="collapseAttractions">
+                        <i class="fas fa-map-marker-alt"></i> Tourist Attractions
+                    </button>
+                </h2>
+                <div id="collapseAttractions" class="accordion-collapse collapse" aria-labelledby="headingAttractions" data-bs-parent="#siquijorAccordion">
+                    <div class="accordion-body">
+                        <img src="path_to_attractions_image.jpg" alt="Siquijor Attractions" class="section-image mb-3">
+                        <p>Siquijor is famous for its beautiful beaches, waterfalls, and mystical sites. Popular attractions include Cambugahay Falls...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="section-header">
+                <h2>About This Site</h2>
+            </div>
+            <p class="mt-3">This website was created with the purpose of promoting Siquijor Island to a broader audience. As one of the most beautiful and culturally rich islands in the Philippines, Siquijor often remains a hidden gem to many. Our goal is to provide a platform where locals and visitors alike can discover and explore the island's history, culture, attractions, and unique features.</p>
+            <p>Through this site, we aim to give everyone a chance to learn about Siquijor's mystical past, its diverse natural beauty, and its vibrant local traditions. We hope that by providing detailed and up-to-date information, we can encourage more people to visit, experience, and appreciate the wonders of Siquijor.</p>
+            <p>Whether you're a traveler looking for your next adventure or someone curious about the island's rich heritage, this website serves as a resource that brings Siquijor closer to the world. It was created to connect people with Siquijor’s unique stories, guide them to amazing destinations, and ensure that the island's beauty is recognized and cherished.</p>
+            <p>Our hope is that this platform will foster a deeper connection with Siquijor, its people, and its vibrant culture, and contribute to the island's sustainable growth through responsible tourism and local support.</p>
+        </div>
+    </div>
+    </section>
+    
+    
+    <!-- FAQ Section -->
+<section id="faq" class="container mt-5">
+    <div class="section-header">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+    </div>
+    <div class="accordion mt-3" id="faqAccordion">
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How to get to Siquijor?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    To get to Siquijor, you can take a flight to Dumaguete City (Negros Oriental), which is the closest major airport. From there, you can take a ferry to Siquijor Island. There are regular ferry services from Dumaguete to Siquijor, which take around 1 to 1.5 hours. Alternatively, you can take a ferry from other nearby islands like Cebu or Bohol.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Is it safe to travel and stay around in Siquijor?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, Siquijor is generally considered a safe destination for travelers. The island is known for its peaceful atmosphere, and the locals are friendly and welcoming. Like any travel destination, it's always a good idea to take standard safety precautions, such as securing your belongings and being aware of your surroundings, especially at night.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Is it expensive to stay in Siquijor?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Siquijor offers a range of accommodations to suit different budgets. There are affordable guesthouses and hostels as well as mid-range hotels and resorts. On average, you can find budget options starting from PHP 500 to 1,000 per night, while mid-range accommodations can range from PHP 2,000 to 4,000. Luxury resorts will have higher rates. Food and other expenses are also quite affordable compared to major tourist destinations in the Philippines.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Are there witches in Siquijor?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Siquijor has a rich folklore that includes tales of witches, healers, and mystical practices. These stories are a big part of the island's history and culture. While many people still practice traditional healing methods involving herbs and rituals, the idea of witches in the traditional sense is more of a cultural belief than a reality. Visitors are often intrigued by the island's mystical reputation, but most of these practices are rooted in the island’s spiritual heritage and should be viewed respectfully.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <p class="mb-1"> <a href="#" class="text-white">Siquijor Info</a> | Mike Mike</p>
+        <p>&copy; 2025 All Rights Reserved </p>
+        
+    </footer>
+
+    
+    <!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  
+    
+
+</body>
+</html>
